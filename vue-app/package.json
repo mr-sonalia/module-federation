@@ -4,8 +4,10 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+		"watch-webpack": "nodemon --watch ./webpack.config.js --exec npm run serve"
   },
+	
   "dependencies": {
     "core-js": "^3.8.3",
     "react": "^17.0.2",

@@ -1,22 +1,21 @@
 <template>
   <div class="container">
-    <p>Host</p>
-    <vue-card :pName="'Yash'" :pEmail="'s@s.s'" :pPhone="'121234'"></vue-card>
-    <!-- <react-card></react-card> -->
+    <p>Vue Host</p>
+    <!-- <vue-card :pName="'Yash'" :pEmail="'s@s.s'" :pPhone="121234"></vue-card> -->
+    <react-card></react-card>
   </div>
 </template>
 
 <script>
-import VueCard from "vue_app/VueCard";
-// import ReactCard from "react_app/ReactCard"
+import React from "react"
+// import VueCard from "vue_app/VueCard";
+import ReactCard from "react_remote/ReactCard"
 
 export default {
   name: "App",
   components: {
-    VueCard ,
-    // VueCard : () => import("vue_app/VueCard"),
-
-    // ReactCard
+    // VueCard ,
+    ReactCard
   },
 };
 </script>

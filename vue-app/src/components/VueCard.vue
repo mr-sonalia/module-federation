@@ -1,7 +1,7 @@
 <template>
 	<div class="card">
 		<div class="card__header">
-			<h4>Vue Card</h4>
+			<h4>Vue Card(Remote)</h4>
 		</div>
 		<div class="card__body">
 			<form class="form" @submit.prevent="submitHander">
@@ -51,13 +51,13 @@ export default {
 		return {
 			uname: "",
 			email: "",
-			phone: "",
+			phone: null,
 		};
 	},
 	props: {
 		pName: String,
 		pEmail: String,
-		pPhone: String,
+		pPhone: Number,
 	},
 	components: {},
 	//computed: mapGetters(['']),
